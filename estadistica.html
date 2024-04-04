@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Info -  La Zanahoria Juguetona</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <!-- Opcional: CSS de Bootstrap para DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap5.min.css">
+    <!-- Estilo Css propio, sticky footer-->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <header class="mb-3">
+        <!-- Comienzo de navbar -->
+        <h1>La zanahoria juguetona</h1>
+        <nav>
+          <a href="index1.html">Inicio</a>
+          <a href="estadistica.html">Estadistica</a>
+          <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="site-content container mt-4">
+       <!-- tabla completada -->
+        <table class="table table-light" id="infoTable">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Pedido</th>
+              <th>Cantidad</th>
+              <th>Direccion</th>
+              <th>numero</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Juan</td>
+              <td>platanos</td>
+              <td>1kg</td>
+              <td>avda siempre viva 2222</td>
+              <td>juan@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Amanda</td>
+              <td>Manzanas</td>
+              <td>2kg</td>
+              <td>canada 5545</td>
+              <td>mandy@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Joaquin</td>
+              <td>Uvas</td>
+              <td>1,5kkg</td>
+              <td>providencia 2221</td>
+              <td>joaco@gmail.com</td>
+            </tr>
+            <tr>
+              <td>yaritza</td>
+              <td>Cebollas</td>
+              <td>1kg</td>
+              <td>perez 22111</td>
+              <td>yari@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Zafira</td>
+              <td>tomates</td>
+              <td>3kg</td>
+              <td>jose joaquin 44322</td>
+              <td>zafi@gmail.com</td>
+            </tr>
+         </tbody>
+      </table>
+
+    </main>
+    <footer>
+      <p>&copy; Juan Jorquera - Makarena Yevenes - 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <!-- Opcional: JS de Bootstrap para DataTables -->
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap5.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#infoTable').DataTable({
+          "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
